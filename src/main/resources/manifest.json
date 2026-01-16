@@ -1,0 +1,22 @@
+{
+    "Group": "EatZav",
+    "Name": "EatZavPlugin",
+    "Version": "0.0.1",
+    "Description": "Food mechanics in the game",
+    "Authors": [
+        {
+            "Name": "ZavidVi"
+        }
+    ],
+    "Website": "",
+    "ServerVersion": "*",
+    "Dependencies": {
+        
+    },
+    "OptionalDependencies": {
+        
+    },
+    "DisabledByDefault": false,
+    "Main": "org.eatzav.plugin.EatZavPlugin",
+    "IncludesAssetPack": true
+}
