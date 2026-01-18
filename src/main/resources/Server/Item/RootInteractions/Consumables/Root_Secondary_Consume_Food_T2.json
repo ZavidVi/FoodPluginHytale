@@ -1,0 +1,9 @@
+{
+  "RequireNewClick": true,
+  "Interactions": [
+    "Condition_Consume_Food_T2",
+    {
+      "Type": "EatInterction"
+    }
+  ]
+}

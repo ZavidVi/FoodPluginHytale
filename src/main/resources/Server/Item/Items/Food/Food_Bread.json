@@ -36,12 +36,6 @@
         {
           "Type": "ApplyEffect",
           "EffectId": "Food_Instant_Heal_Bread"
-        },
-        {
-          "Type": "EatInterction",
-          "FoodValue": {
-            "FoodValue": 30
-          }
         }
       ]
     }

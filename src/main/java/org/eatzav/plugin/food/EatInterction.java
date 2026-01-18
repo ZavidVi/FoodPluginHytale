@@ -14,6 +14,7 @@ import org.eatzav.plugin.config.EatConfig;
 
 
 import javax.annotation.Nonnull;
+import java.util.Map;
 
 public class EatInterction extends SimpleInstantInteraction {
 
@@ -22,8 +23,15 @@ public class EatInterction extends SimpleInstantInteraction {
     @Override
     protected void firstRun(@Nonnull InteractionType interactionType, @Nonnull InteractionContext context, @Nonnull CooldownHandler cooldownHandler) {
         Ref<EntityStore> entity = context.getEntity();
-        EatComponent eatComponent  = entity.getStore().getComponent(entity, EatZavPlugin.get().getEatComponentType());
-        eatComponent.addEat(this.config.getFoodValue());
+
+        float f = context.getEntry().getTimeInSeconds(context.getEntry().getTimestamp());
+        Map<String, String> s = context.getInteractionVars();
+        if (context.getEntry().getTimestamp() == 0L) {
+            EatComponent eatComponent  = entity.getStore().getComponent(entity, EatZavPlugin.get().getEatComponentType());
+           // float s = context.getState().progress;
+            eatComponent.addEat(this.config.getFoodValue());
+        }
+
 
     }
 

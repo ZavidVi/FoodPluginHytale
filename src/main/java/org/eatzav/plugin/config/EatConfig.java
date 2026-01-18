@@ -20,6 +20,7 @@ public class EatConfig {
     private int FoodValue = 2;
 
     public EatConfig() {
+
     }
 
 
